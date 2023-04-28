@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: rgb(0, 0, 0);
+}
+header{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+header img{
+    width: 10rem;
+    height: auto;
+    border-radius: 100%;
+    animation: pulse 1s infinite;
+
+}
+@keyframes pulse{
+           0%{
+            box-shadow: 0 0 0 0px rgba(8, 205, 227, 0.789);
+           }
+           100%{
+            box-shadow: 0 0 0 30px rgba(3, 184, 208, 0);
+           }
+}
+
+header h3{
+    color: rgb(79, 236, 17);
+    margin: 1.5rem 0;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+header p{
+    color: rgb(255, 242, 0);
+
+}
+.fb{
+    color: rgb(45, 83, 196);
+    margin-top: 5rem;
+    font-size: 5rem;
+    animation: fb 2s ease-in-out infinite;
+
+}
+@keyframes fb{
+        0%{color: rgb(255, 25, 0);}
+        50%{color: rgb(77, 255, 0);}
+        100%{color: rgb(76, 0, 255);}
+}
+.Container{
+    width: 100%;
+    min-height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
+    gap: 1rem;
+    grid-template-areas: "Profile Profile Skills Skills"
+                          "Edu Edu Edu Lang"
+                          "Contact Exp Exp Exp"
+                          "Sanjoy Sanjoy Sanjoy Sanjoy";
+                          padding: 2rem;
+                          
+
+}
+.Profile{
+    background: rgb(5, 188, 224);
+    color: black;
+    padding: 2rem;
+    grid-area: Profile;
+    
+}
+.Skills{
+    background: rgb(212, 227, 230);
+    color: black;
+    padding: 2rem;
+    grid-area: Skills;
+    
+}
+.Edu{
+    background: rgb(5, 188, 224);
+    color: black;
+    padding: 2rem;
+    grid-area: Edu;
+}
+.Lang{
+    background: rgb(212, 227, 230);
+    color: black;
+    padding: 2rem;
+    grid-area: Lang;
+    
+}
+.Contact{
+    background: rgb(5, 188, 224);
+    color: black;
+    padding: 2rem;
+    grid-area: Contact;
+}
+.Exp{
+    background: rgb(212, 227, 230);
+    color: black;
+    padding: 2rem;
+    grid-area: Exp;
+    
+}
+.Sanjoy{
+    background: rgb(5, 188, 224);
+    color: black;
+    padding: 2rem;
+    grid-area: Sanjoy;
+}
+.h2{
+    margin-bottom: 1rem;
+}
+.Profile p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+    
+}
+.Profile a{
+    text-decoration: none;
+    background-color: rgb(107, 8, 187);
+    color: beige;
+    border-radius: 5px;
+    padding: 0.2rem;
+    
+}
+.Profile a:hover{
+    background: rgb(1, 68, 64);
+}
+.Skills div{
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+.Skills div progress[value]{
+    width: 100%;
+    height: 1rem;
+}
+.Edu h2{
+    margin-bottom: 1rem;
+}
+.Edu p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+.Edu a{
+    text-decoration: none;
+    background-color: rgb(154, 5, 218);
+    color: rgb(251, 249, 255);
+    border-radius: 5px;
+    padding: 0.2rem;
+    transition: 0.5s;
+}
+.Edu a:hover{
+    background: rgb(1, 68, 64);
+}
+.Lang ul{
+   margin: 1rem 0;
+   padding: 0.3rem 1rem;
+}
+.Lang ul li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.Contact div i{
+    margin-right: 0.2rem;
+}
+.Contact p{
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.Exp p{
+    padding: 0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+.Exp a{
+    text-decoration: none;
+    background-color: rgb(154, 5, 218);
+    color: rgb(251, 249, 255);
+    border-radius: 5px;
+    padding: 0.2rem;
+    transition: 0.5s;
+}
+.Exp a:hover{
+     background: rgb(1, 68, 64);
+}
+.Sanjoy i{
+    background: white;
+    color: black;
+    padding: 0.5rem;
+    margin: 1rem 0.2rem;
+   border-radius: 50%;
+   transition: 0.5s;
+   
+}
+.Sanjoy i:hover{
+    background: rgb(255, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+.Sanjoy{
+    text-align: center;
+}
+
