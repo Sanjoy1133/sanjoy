@@ -210,3 +210,19 @@ header p{
     text-align: center;
 }
 
+@media only screen and (max-width: 770px){
+    .Container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.6fr 1fr 0.6fr 0.5fr 0.8fr 0.1fr;
+        grid-template-areas: "Profile"
+                              "Skills"
+                              "Edu"
+                              "Lang"
+                              "Contact"
+                              "Exp"
+                              "Sanjoy"   
+        
+        
+        
+    }
+}
